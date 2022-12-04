@@ -1,0 +1,36 @@
+@media (min-width: 375px) and (max-width: 425px) {
+    .container {
+        padding: 20px 45px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 50px 155px;
+    }
+    .mob__img {
+        display: none !important;
+    }
+    .desk__img {
+        display: block !important;
+        border-radius: 8px 0 0 8px;
+    }
+    .row {
+        flex-wrap: nowrap;
+    }
+    .details {
+        border-radius: 0 8px 8px 0;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        padding: 75px 290px;
+    }
+    button {
+        cursor: pointer;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1440px){
+    .container {
+        padding: 75px 445px;
+    }
+}

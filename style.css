@@ -1,0 +1,110 @@
+:root {
+    --darkcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --Montserrat: 'Montserrat', sans-serif;
+    --Fraunces: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+}
+.row {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image {
+    width: 100%;
+}
+.image .mob__img, .desk__img {
+    max-width: 100%;
+    height: auto;
+}
+.image .mob__img {
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+.image .desk__img{
+    display: none ;
+}
+.details {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    padding: 10px 16px;
+    border-radius: 0 0 8px 8px;
+}
+.details p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--darkGrayishBlue);
+    letter-spacing: 4px;
+    font-variant: small-caps;
+    font-family: var(--Montserrat);
+    font-weight: 700;
+}
+.details p:nth-of-type(2) {
+    letter-spacing: normal;
+    font-variant: normal;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.details h2 {
+    color: var(--veryDarkBlue);
+    font-family: var(--Fraunces);
+    font-size: 25px;
+    font-weight: 700;
+}
+.details span {
+    display: block;
+    color: var(--darkcyan);
+    font-family: var(--Fraunces);
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.details span sup {
+    color: var(--darkGrayishBlue);
+    font-size: 10px;
+}
+button {
+    display: block;
+    margin: 8px auto 8px;
+    background-color: var(--darkcyan);
+    color: var(--white);
+    font-family: var(--Montserrat);
+    width: 190px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    opacity: .7;
+    transition: all .5s linear;
+}
+button:hover {
+    opacity: 1;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
